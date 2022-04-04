@@ -76,7 +76,7 @@ pub fn parse(input: &str) -> Value {
     temp = remove_apbr(&temp);
     temp = remove_brend2(&temp);
     temp = trimstr(&temp);
-    std::fs::write("log.txt", &temp).expect("Unable to write file");
+    //std::fs::write("log.txt", &temp).expect("Unable to write file");
 
     let json: serde_json::Value =
         serde_json::from_str(&temp[0..temp.len() - 1]).expect("JSON was not well-formatted");
