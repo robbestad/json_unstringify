@@ -1,5 +1,5 @@
 [package]
-name = "json_unstringifiy"
+name = "json_unstringify"
 version = "1.0.0"
 edition = "2021"
 description = "Unstringifies JSON"
