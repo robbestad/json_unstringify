@@ -1,0 +1,15 @@
+[package]
+name = "json_unstringifiy"
+version = "1.0.0"
+edition = "2021"
+description = "Unstringifies JSON"
+homepage = "https://github.com/robbestad/json_unstringify"
+license = "MIT"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = "1.0"
+regex = "1"
+serde = { version = "1.0", features = ["derive"] }
