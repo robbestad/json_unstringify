@@ -77,9 +77,11 @@ pub fn parse(input: &str) -> Value {
     temp = remove_brend2(&temp);
     temp = trimstr(&temp);
     //std::fs::write("log.txt", &temp).expect("Unable to write file");
-
+    if &temp[temp.len()-1..temp.len()] == "\"" {
+        temp = (&temp[0..temp.len() - 1]).to_string();
+    }
     let json: serde_json::Value =
-        serde_json::from_str(&temp[0..temp.len() - 1]).expect("JSON was not well-formatted");
+        serde_json::from_str(&temp).expect("JSON was not well-formatted");
     json
 }
 #[cfg(test)]
