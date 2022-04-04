@@ -1,6 +1,6 @@
 [package]
 name = "json_unstringify"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Unstringifies JSON"
 homepage = "https://github.com/robbestad/json_unstringify"
